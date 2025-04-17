@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator App</title>
+    <link rel="shortcut icon" href="./images/calc.ico" type="image/x-icon">
+    <link rel="stylesheet" href="dist/build.css">
+</head>
+<body class="h-screen flex items-center justify-center font-mono bg-gray-200">
+    <!-- Outer Container -->
+    <div id="outer-container" class="border-2 border-gray-600 bg-gray-300 p-2 rounded-sm">
+         <!-- Display Container -->
+         <div id="screen-display" class="text-right bg-gray-200 px-2 pt-3 text-lg text-gray-700 h-13 mb-2 border border-gray-400 rounded-sm">
+         </div>
+         <!-- Separator -->
+         <hr class="text-gray-500 mb-2">
+         <!-- Buttons Container -->
+          <div id="button-container" class="flex flex-col gap-1">
+            <!-- Operation Buttons -->
+            <button type="button" class="calc-clear-btn">CLEAR</button>
+             <!-- 7, 8, 9, / Buttons -->
+             <div class="flex gap-1">
+                <button type="button" class="calc-num-btn">7</button>
+                <button type="button" class="calc-num-btn">8</button>
+                <button type="button" class="calc-num-btn">9</button>
+                <button type="button" class="calc-op-btn">/</button>
+             </div>
+             <!-- 4, 5, 6, x Buttons -->
+             <div class="flex gap-1">
+                <button type="button" class="calc-num-btn">4</button>
+                <button type="button" class="calc-num-btn">5</button>
+                <button type="button" class="calc-num-btn">6</button>
+                <button type="button" class="calc-op-btn">x</button>
+             </div>
+             <!-- 1, 2, 3, - Buttons -->
+             <div class="flex gap-1">
+                <button type="button" class="calc-num-btn">1</button>
+                <button type="button" class="calc-num-btn">2</button>
+                <button type="button" class="calc-num-btn">3</button>
+                <button type="button" class="calc-op-btn">-</button>
+             </div>
+             <!-- 0, ., +, = Buttons -->
+             <div class="flex gap-1">
+                <button type="button" class="calc-num-btn">0</button>
+                <button type="button" class="calc-num-btn">.</button>
+                <button type="button" class="calc-op-btn">+</button>
+                <button type="button" class="calc-op-btn">=</button>
+             </div>
+          </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
